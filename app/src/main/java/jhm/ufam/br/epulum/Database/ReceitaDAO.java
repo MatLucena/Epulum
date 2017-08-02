@@ -337,11 +337,11 @@ public class ReceitaDAO {
         hamburguer.addIngrediente("uma colher de sopa de cominho");
         hamburguer.addIngrediente("uma colher de sopra de gengibre");
         hamburguer.addIngrediente("50 ml de molho shoyo");
-        hamburguer.addPasso("Cozinhe as lentilhas na panela de pressão por 15a 20 minutos");
-        hamburguer.addPasso("Deixe esfriar a lentilha e, depois, coloque em uma vasilha. Misture a cebola e a salsinha picadas ");
-        hamburguer.addPasso("Tempere a mistura de lentilha com sal, molho shoyo, mostarda e cominho");
+        hamburguer.addPasso("Cozinhe as lentilhas na panela de pressão por 15 a 20 minutos");
+        hamburguer.addPasso("Deixe esfriar a lentilha e; depois; coloque em uma vasilha. Misture a cebola e a salsinha picadas ");
+        hamburguer.addPasso("Tempere a mistura de lentilha com sal; molho shoyo; mostarda e cominho");
         hamburguer.addPasso("Rale o gengibre e esprema o sumo na mistura de lentilha");
-        hamburguer.addPasso("Vá acrescentando, aos poucos, a farinha de rosca");
+        hamburguer.addPasso("Vá acrescentando; aos poucos; a farinha de rosca");
         hamburguer.addPasso("Misture até dar liga");
         hamburguer.addPasso("vá fazendo discos em formato de hambúrguer molhando sempre as mãos com água para não grudar");
         hamburguer.addPasso("doure cada lado dos discos em uma frigideira untada com óleo");
@@ -422,13 +422,13 @@ public class ReceitaDAO {
         sopa.addIngrediente("Sal somente se necessário");
         sopa.addPasso("Em uma panela grande; doure o alho em um fio de óleo e logo acrescente a cebola picada");
         sopa.addPasso("Mexa rápido e acrescente a abóbora picada e a batata");
-        sopa.addPasso("Coloque a água e deixe ferver, após fervura colocar o caldo de legumes e mexer");
+        sopa.addPasso("Coloque a água e deixe ferver; após fervura colocar o caldo de legumes e mexer");
         sopa.addPasso("Deixe cozinhar com tampa até a abóbora e a batata estarem cozidas");
         sopa.addPasso("Desligue o fogo");
         sopa.addPasso("Espere amornar um pouco");
         sopa.addPasso("Depois despeje tudo no liquidificador e bata até virar creme");
-        sopa.addPasso("Despeje na panela novamente e cozinhe uns 3 minutos com a cebolinha, acrescente sal se necessário");
-        sopa.addPasso("Sirva quente, com cubinhos de queijo branco e torradas");
+        sopa.addPasso("Despeje na panela novamente e cozinhe uns 3 minutos com a cebolinha; acrescente sal se necessário");
+        sopa.addPasso("Sirva quente; com cubinhos de queijo branco e torradas");
         this.addReceita(sopa);
 
         Receita cappuccino = new Receita("Cappuccino Caseiro","Uma bebida deliciosa para o café da manhã",R.drawable.cappuccino);
