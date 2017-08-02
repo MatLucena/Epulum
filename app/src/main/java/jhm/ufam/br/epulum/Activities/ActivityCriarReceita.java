@@ -511,8 +511,6 @@ public class ActivityCriarReceita extends AppCompatActivity
                 final Dialog alteraReceitaDialog = new Dialog(ActivityCriarReceita.this);
                 alteraReceitaDialog.setContentView(R.layout.dialog_alter_text);
                 alteraReceitaDialog.setTitle("Ingrediente");
-                TextView title = (TextView) alteraReceitaDialog.findViewById(R.id.txt_dialog_title);
-                title.setText("Ingrediente");
                 final EditText ingr = (EditText) alteraReceitaDialog.findViewById(R.id.et_item);
                 ingr.setText(receita.getIngredientes().get(position));
 

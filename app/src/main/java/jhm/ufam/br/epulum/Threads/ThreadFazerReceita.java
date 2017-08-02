@@ -30,8 +30,12 @@ public class ThreadFazerReceita implements Runnable {
     private final String key_PREPARAR = "preparar";
     private final String key_PROXIMO = "próximo";
     private final String key_PROXIMA = "próxima";
+    private final String key_PRO = "pro";
+    private final String key_PROS = "prós";
+    private final String key_POSSO = "posso";
+    private final String key_POSSE = "posse";
     private final String key_IRPARA = "ir para";
-    private final String key_RECIFE = "recife";
+    private final String key_RECIFE = "para recife";
     private final String key_VOLTAR = "voltar";
     private final String key_RETORNAR = "retornar";
     private final String key_DENOVO = "de novo";
@@ -151,7 +155,7 @@ public class ThreadFazerReceita implements Runnable {
     }
 
     private boolean proximo() {
-        return hasWord(key_SIM) || hasWord(key_PROXIMO) || hasWord(key_PROXIMA);
+        return hasWord(key_SIM) || hasWord(key_PROXIMO) || hasWord(key_PROXIMA) || hasWord(key_PRO) || hasWord(key_PROS) || hasWord(key_POSSO) || hasWord(key_POSSE);
     }
 
     private boolean voltar(){
