@@ -14,6 +14,8 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -86,10 +88,23 @@ public class ActivityPerfil extends AppCompatActivity
         SharedPreferences settings = getSharedPreferences(APP_PREFS, 0);
         em_email = settings.getString(key_EMAIL,"");
         em_nome = settings.getString(key_NOME,"");
-        em_nome = settings.getString(key_UID,"");
+        //em_nome = settings.getString(key_UID,"");
 
         txtEmail.setText(em_email);
         txtName.setText(em_nome);
+
+        Button bt_logout = (Button) findViewById(R.id.btn_logout);
+        bt_logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SharedPreferences settings = getSharedPreferences(APP_PREFS, 0);
+                SharedPreferences.Editor editor = settings.edit();
+                editor.clear();
+                editor.commit();
+                final Intent it = new Intent(ActivityPerfil.this,ActivityLogin.class);
+                startActivity(it);
+            }
+        });
 
 
 

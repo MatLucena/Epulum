@@ -61,7 +61,7 @@ public class ActivityLogin extends AppCompatActivity {
         inputPassword = (EditText) findViewById(R.id.password);
         SharedPreferences settings = getSharedPreferences(APP_PREFS, 0);
         inputEmail.setText(settings.getString(key_EMAIL,""));
-        if(!inputEmail.getText().equals(null)){
+        if(settings.getString(key_EMAIL,"").length()>0){
             final Intent it = new Intent(ActivityLogin.this,ActivityMain.class);
             startActivity(it);
         }
